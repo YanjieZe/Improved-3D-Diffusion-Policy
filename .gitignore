@@ -1,0 +1,16 @@
+
+__pycache__/
+*.h5
+*.pt
+*.egg-info/
+ckpts/
+
+raw_data/
+timm/
+.vscode/
+
+deploy_dir/
+deploy_vis_dir/
+ablation_data/
+
+training_data_example/

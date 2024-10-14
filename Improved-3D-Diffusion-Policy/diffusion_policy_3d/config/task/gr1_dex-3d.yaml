@@ -1,0 +1,26 @@
+name: box
+
+shape_meta: &shape_meta
+  # acceptable types: rgb, low_dim
+  obs:
+    point_cloud:
+      shape: [4096, 6]
+      type: point_cloud
+    agent_pos:
+      shape: [32]
+      type: low_dim
+  action:
+    shape: [25]
+
+
+dataset:
+  _target_: diffusion_policy_3d.dataset.gr1_dex_dataset_3d.GR1DexDataset3D
+  zarr_path: data/box_zarr
+  horizon: ${horizon}
+  pad_before: ${eval:'${n_obs_steps}-1'}
+  pad_after: ${eval:'${n_action_steps}-1'}
+  seed: 42
+  val_ratio: 0.00
+  max_train_episodes: 90
+
+  num_points: ${policy.pointcloud_encoder_cfg.num_points}
