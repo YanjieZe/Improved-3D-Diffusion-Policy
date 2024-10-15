@@ -113,7 +113,7 @@ Please consider citing our paper if you find this repo useful:
   title   = {Generalizable Humanoid Manipulation with Improved 3D Diffusion Policies},
   author  = {Yanjie Ze and Zixuan Chen and Wenhao Wang and Tianyi Chen and Xialin He and Ying Yuan and Xue Bin Peng and Jiajun Wu},
   year    = {2024},
-  journal = {arXiv preprint}
+  journal = {arXiv preprint arXiv:2410.10803}
 }
 ```
 
