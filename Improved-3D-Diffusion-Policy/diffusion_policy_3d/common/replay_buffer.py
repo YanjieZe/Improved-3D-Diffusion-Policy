@@ -222,10 +222,33 @@ class ReplayBuffer:
         Copy a on-disk zarr to in-memory compressed.
         Recommended
         """
+        
+        def _get_absolute_zarr_path(zarr_path):
+            """
+            Convert a relative zarr_path to an absolute path based on the repository's root directory.
+            If `zarr_path` is already an absolute path, it is returned as-is.
+            
+            The function works by walking up the directory tree from the current file's
+            location.
+            """
+            if os.path.isabs(zarr_path):
+                return zarr_path
+            
+            repo_root_dir = __file__
+            for _ in range(4):
+                # replay_buffer.py -> common -> diffusion_policy_3d
+                # -> Improved-3D-Diffusion-Policy
+                # -> repo_dir (also Improved-3D-Diffusion-Policy lol)
+                repo_root_dir = os.path.dirname(repo_root_dir)
+            
+            abs_zarr_path = os.path.join(repo_root_dir, zarr_path)
+            
+            return abs_zarr_path
+        
         if backend == 'numpy':
             print('backend argument is deprecated!')
             store = None
-        group = zarr.open(os.path.expanduser(zarr_path), 'r')
+        group = zarr.open(_get_absolute_zarr_path(zarr_path), 'r')
         return cls.copy_from_store(src_store=group.store, store=store, 
             keys=keys, chunks=chunks, compressors=compressors, 
             if_exists=if_exists, **kwargs)
