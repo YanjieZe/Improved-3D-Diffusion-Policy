@@ -43,6 +43,7 @@ Install conda env and packages for both learning and deployment machines:
     
 
     # install my visualizer
+    cd third_party
     cd visualizer && pip install -e . && cd ..
     pip install kaleido plotly open3d tyro termcolor h5py
     cd ..
