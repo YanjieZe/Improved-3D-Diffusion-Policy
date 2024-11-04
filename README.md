@@ -8,12 +8,13 @@ https://github.com/user-attachments/assets/97f6ff8c-45b3-497a-bb66-dd8b24e973b4
 
 # News
 
+- **2024-11-04** Full data and checkpoints (all 3 tasks) are released in [Google Drive](https://drive.google.com/drive/folders/1f5Ln_d14OQ5eSjPDGnD7T4KQpacMhgCB?usp=sharing).
 - **2024-10-13** Release the full code for learning/teleoperation. Have a try!
 
 
 # Training & Deployment of iDP3
 
-This repo is for training and deployment of iDP3. We provide the training data example in [Google Drive](https://drive.google.com/file/d/1c-rDOe1CcJM8iUuT1ecXKjDYAn-afy2e/view?usp=sharing), so that you could try to train the model without collecting data.
+This repo is for training and deployment of iDP3. We provide the training data example in this [Google Drive](https://drive.google.com/file/d/1c-rDOe1CcJM8iUuT1ecXKjDYAn-afy2e/view?usp=sharing), so that you could try to train the model without collecting data. The full data and the checkpoints are available in this [Google Drive](https://drive.google.com/drive/folders/1f5Ln_d14OQ5eSjPDGnD7T4KQpacMhgCB?usp=sharing).
 
 More info:
 - For the training machine, we use a local computer with an Nvidia RTX 4090 (24G memory). 
