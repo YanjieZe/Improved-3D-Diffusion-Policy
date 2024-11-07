@@ -90,7 +90,7 @@ Then you could train the policy and deploy it.
     # 2d policy
     bash scripts/train_policy.sh dp_224x224_r3m gr1_dex-image 0913_example
 
-**Deploy.** After you have trained the policy, deploy the policy with the similar command:
+**Deploy.** After you have trained the policy, deploy the policy with the following command. For missing packages such as `communication.py`, see another [our repo](https://github.com/YanjieZe/Humanoid-Teleoperation/tree/main/humanoid_teleoperation/teleop-zenoh)
 
     # 3d policy
     bash scripts/deploy_policy.sh idp3 gr1_dex-3d 0913_example
