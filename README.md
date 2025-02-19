@@ -1,4 +1,4 @@
-# [Generalizable Humanoid Manipulation with Improved 3D Diffusion Policies](https://humanoid-manipulation.github.io/)
+# [Generalizable Humanoid Manipulation with 3D Diffusion Policies](https://humanoid-manipulation.github.io/)
 
 Our project is **fully open-sourced**. We separate them into two repos: [Learning & Deployment of iDP3](https://github.com/YanjieZe/Improved-3D-Diffusion-Policy) and [Humanoid Teleoperation](https://github.com/YanjieZe/Humanoid-Teleoperation). This repo is for training and deployment of iDP3.
 
@@ -112,7 +112,7 @@ You can specify `vis_cloud=1` to render the point cloud as in the paper.
 Please consider citing our paper if you find this repo useful:
 ```
 @article{ze2024humanoid_manipulation,
-  title   = {Generalizable Humanoid Manipulation with Improved 3D Diffusion Policies},
+  title   = {Generalizable Humanoid Manipulation with 3D Diffusion Policies},
   author  = {Yanjie Ze and Zixuan Chen and Wenhao Wang and Tianyi Chen and Xialin He and Ying Yuan and Xue Bin Peng and Jiajun Wu},
   year    = {2024},
   journal = {arXiv preprint arXiv:2410.10803}
