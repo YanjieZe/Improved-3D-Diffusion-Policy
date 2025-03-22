@@ -5,6 +5,9 @@ Our project is **fully open-sourced**. We separate them into two repos: [Learnin
 
 https://github.com/user-attachments/assets/97f6ff8c-45b3-497a-bb66-dd8b24e973b4
 
+**Applications and extensions of DP3 from the community**:
+
+- [arXiv 2025.03](https://arxiv.org/abs/2503.07511), *PointVLA: Injecting the 3D World into Vision-Language-Action Models*, where iDP3 Encoder is used in training a powerful 3D VLA.
 
 # News
 
