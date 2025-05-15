@@ -101,7 +101,7 @@ Then you could train the policy and deploy it.
     # 2d policy
     bash scripts/deploy_policy.sh dp_224x224_r3m gr1_dex-image 0913_example
 
-Note that you may not run the deployment code without a robot (differet robots have different API). The code we provide is more like an example to show how to deploy the policy. You could modify the code to fit your own robot (any robot with a camera is OK).
+Note that you may not run the deployment code without a robot (different robots have different API). The code we provide is more like an example to show how to deploy the policy. You could modify the code to fit your own robot (any robot with a camera is OK).
 
 **Visualize.** You can visualize our training data example by running (remember to set the dataset path):
 
