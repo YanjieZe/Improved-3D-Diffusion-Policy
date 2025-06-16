@@ -10,7 +10,7 @@ https://github.com/user-attachments/assets/97f6ff8c-45b3-497a-bb66-dd8b24e973b4
 - [arXiv 2025.03](https://arxiv.org/abs/2503.07511), *PointVLA: Injecting the 3D World into Vision-Language-Action Models*, where iDP3 Encoder is used in training a powerful 3D VLA.
 
 # News
-
+- **2025-06-16** iDP3 is accepted to *IROS 2025*.
 - **2024-11-04** Full data and checkpoints (all 3 tasks) are released in [Google Drive](https://drive.google.com/drive/folders/1f5Ln_d14OQ5eSjPDGnD7T4KQpacMhgCB?usp=sharing).
 - **2024-10-13** Release the full code for learning/teleoperation. Have a try!
 
